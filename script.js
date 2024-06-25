@@ -6,7 +6,8 @@ reset=()=>{
     {
         document.getElementById(i).innerText=`Button ${i}`
         document.getElementById(i).disabled=false
-       // document.getElementById("result").innerText=""
+       // document.getElementById("result").innerText=`${pos1} wins !!`;
+        //document.getElementById("result").innerText=""
     }
 }
 checkResult=()=>{
@@ -20,8 +21,8 @@ checkResult=()=>{
         {
             if(pos1==pos2 && pos1==pos3)
             {
-                document.getElementById("result").innerText=`${pos1} wins !!`;
-                reset()
+                document.getElementById("result").innerText=`${pos1} wins !! .`; 
+              //  reset()
             }
 
         }
