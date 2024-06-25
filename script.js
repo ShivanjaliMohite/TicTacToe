@@ -22,6 +22,11 @@ checkResult=()=>{
             if(pos1==pos2 && pos1==pos3)
             {
                 document.getElementById("result").innerText=`${pos1} wins !! .`; 
+                for(let i=0;i<=8;i++)
+                {
+                    document.getElementById(i).innerText=`Button ${i}`
+                    document.getElementById(i).disabled=false
+                }
               //  reset()
             }
 
